@@ -1,0 +1,4 @@
+<div ng-controller="OrdersController">
+    CustomerID: {{ customerIdFilter }}
+    <table><tr ng-repeat="order in orders | filter: {customerId : customerIdFilter}"><td>{{ order.total }}</td></tr></table>
+</div>
